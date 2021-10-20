@@ -34,6 +34,7 @@
             this.lblFirstName = new System.Windows.Forms.Label();
             this.txtFirstName = new System.Windows.Forms.TextBox();
             this.btnAdd = new System.Windows.Forms.Button();
+            this.export = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // listUsers
@@ -86,11 +87,22 @@
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
+            // export
+            // 
+            this.export.Location = new System.Drawing.Point(497, 346);
+            this.export.Name = "export";
+            this.export.Size = new System.Drawing.Size(291, 86);
+            this.export.TabIndex = 6;
+            this.export.Text = "Fileba Írás";
+            this.export.UseVisualStyleBackColor = true;
+            this.export.Click += new System.EventHandler(this.export_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.export);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.txtFirstName);
             this.Controls.Add(this.lblFirstName);
@@ -112,6 +124,7 @@
         private System.Windows.Forms.Label lblFirstName;
         private System.Windows.Forms.TextBox txtFirstName;
         private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Button export;
     }
 }
 
