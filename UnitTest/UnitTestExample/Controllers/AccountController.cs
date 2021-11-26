@@ -50,7 +50,13 @@ namespace UnitTestExample.Controllers
 
         public bool ValidatePassword(string password)
         {
-            return true;
+            
+                var LowerCase = new Regex(@"[a-z]+");
+                var UpperCase = new Regex(@"[A-Z]+");
+                var Number = new Regex(@"[0-9]+");
+                var Length = new Regex(@".{8,}");
+                return LowerCase.IsMatch(password) && UpperCase.IsMatch(password) && Number.IsMatch(password) && Length.IsMatch(password);
+            
         }
     }
 }
